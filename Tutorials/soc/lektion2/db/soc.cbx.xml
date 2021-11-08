@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="soc">
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|image:image|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nv91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|pll:pll|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|vga:vga|altsyncram:vmem_rtl_0" CBX_FILE_NAME="altsyncram_o5h1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

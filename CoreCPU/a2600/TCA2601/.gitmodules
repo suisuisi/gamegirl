@@ -1,0 +1,6 @@
+[submodule "mist/mist-modules"]
+	path = mist/mist-modules
+	url = https://github.com/mist-devel/mist-modules.git
+[submodule "T65"]
+	path = T65
+	url = https://github.com/mist-devel/T65.git

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>/mist_5200/atari5200.qws - 变更 - EclaireXL - 64kib</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="37v5hlvhUE0Pr/iecNbMgTxgBaRqOaDB8N4GHvbwpLVKs0EbuGp+9hZq8uoEjILud1YAK50fMxqaxS8n3b4vDQ==" />
+<link rel='shortcut icon' href='/redmine/favicon.ico' />
+<link rel="stylesheet" media="all" href="/redmine/stylesheets/jquery/jquery-ui-1.11.0.css" />
+<link rel="stylesheet" media="all" href="/redmine/stylesheets/application.css" />
+<link rel="stylesheet" media="all" href="/redmine/stylesheets/responsive.css" />
+
+<script src="/redmine/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js"></script>
+<script src="/redmine/javascripts/application.js"></script>
+<script src="/redmine/javascripts/responsive.js"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('若离开当前页面，则该页面内未保存的内容将丢失。'); });
+//]]>
+</script>
+
+
+<!-- page specific tags -->
+  <script src="/redmine/javascripts/repository_navigation.js"></script>
+<link rel="stylesheet" media="screen" href="/redmine/stylesheets/scm.css" />
+</head>
+<body class="project-eclairexl controller-repositories action-changes">
+
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/redmine/projects/eclairexl/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            <input type="hidden" name="changesets" value="1" />
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">&#9906;</label>
+            <input type="text" name="q" id="flyout-search" class="small js-search-input" placeholder="搜索" />
+</form>        </div>
+
+
+        <h3>项目</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>一般</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>简介</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/redmine/login">登录</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="/redmine/">主页</a></li><li><a class="projects" href="/redmine/projects">项目</a></li><li><a class="help" href="https://www.redmine.org/guide">帮助</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/redmine/projects/eclairexl/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="changesets" value="1" />
+        <label for='q'>
+          <a accesskey="4" href="/redmine/projects/eclairexl/search">搜索</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        
+    </div>
+
+    <h1><span class="current-project">EclaireXL</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul><li><a class="overview" href="/redmine/projects/eclairexl">概述</a></li><li><a class="activity" href="/redmine/projects/eclairexl/activity">活动</a></li><li><a class="issues" href="/redmine/projects/eclairexl/issues">问题</a></li><li><a class="news" href="/redmine/projects/eclairexl/news">新闻</a></li><li><a class="documents" href="/redmine/projects/eclairexl/documents">文档</a></li><li><a class="wiki" href="/redmine/projects/eclairexl/wiki">Wiki</a></li><li><a class="boards" href="/redmine/projects/eclairexl/boards">讨论区</a></li><li><a class="files" href="/redmine/projects/eclairexl/files">文件</a></li><li><a class="repository selected" href="/redmine/projects/eclairexl/repository">版本库</a></li></ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+        
+        
+
+<div class="contextual">
+  
+<a class="icon icon-stats" href="/redmine/projects/eclairexl/repository/statistics">统计</a>
+
+<form id="revision_selector" action="/redmine/projects/eclairexl/repository/changes/mist_5200/atari5200.qws" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />  <!-- Branches Dropdown -->
+
+
+    | 修订: 
+    <input type="text" name="rev" id="rev" size="8" />
+</form>
+</div>
+
+<h2><a href="/redmine/projects/eclairexl/repository">repo2</a>
+    / <a href="/redmine/projects/eclairexl/repository/show/mist_5200">mist_5200</a>
+    / <a href="/redmine/projects/eclairexl/repository/changes/mist_5200/atari5200.qws">atari5200.qws</a>
+
+
+</h2>
+
+
+<p>
+历史记录 |
+    <a href="/redmine/projects/eclairexl/repository/entry/mist_5200/atari5200.qws">查看</a> |
+    <a href="/redmine/projects/eclairexl/repository/annotate/mist_5200/atari5200.qws">追溯</a> |
+<a href="/redmine/projects/eclairexl/repository/raw/mist_5200/atari5200.qws">下载</a>
+(2.99 KB)
+</p>
+
+
+
+<ul class="properties"><li><b>svn:mime-type</b>: <span>application/octet-stream</span></li></ul>
+
+<div class="autoscroll">
+
+<form action="/redmine/projects/eclairexl/repository/diff/mist_5200/atari5200.qws" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<table class="list changesets">
+<thead><tr>
+<th>#</th>
+<th></th>
+<th></th>
+<th>日期</th>
+<th>作者</th>
+<th>注释</th>
+</tr></thead>
+<tbody>
+<tr class="changeset odd">
+<td class="id">
+  <a title="修订 233" href="/redmine/projects/eclairexl/repository/revisions/233">233</a>
+</td><td class="checkbox"><input type="radio" name="rev" id="cb-1" value="233" onclick="$(&#39;#cbto-2&#39;).prop(&#39;checked&#39;,true);" checked="checked" /></td>
+<td class="checkbox"></td>
+<td class="committed_on">2014-10-29 21:45</td>
+<td class="author">markw</td>
+<td class="comments"><p>Made sure its 5200 throughout</p></td>
+</tr>
+<tr class="changeset even">
+<td class="id">
+  <a title="修订 232" href="/redmine/projects/eclairexl/repository/revisions/232">232</a>
+</td><td class="checkbox"><input type="radio" name="rev" id="cb-2" value="232" onclick="$(&#39;#cbto-3&#39;).prop(&#39;checked&#39;,true);" /></td>
+<td class="checkbox"><input type="radio" name="rev_to" id="cbto-2" value="232" onclick="if ($(&#39;#cb-2&#39;).prop(&#39;checked&#39;)) {$(&#39;#cb-1&#39;).prop(&#39;checked&#39;,true);}" checked="checked" /></td>
+<td class="committed_on">2014-10-29 21:42</td>
+<td class="author">markw</td>
+<td class="comments"><p>Made the sdcard one the main one - should be stable now with pll fix</p></td>
+</tr>
+<tr class="changeset odd">
+<td class="id">
+  <a title="修订 227" href="/redmine/projects/eclairexl/repository/revisions/227">227</a>
+</td><td class="checkbox"><input type="radio" name="rev" id="cb-3" value="227" onclick="$(&#39;#cbto-4&#39;).prop(&#39;checked&#39;,true);" /></td>
+<td class="checkbox"><input type="radio" name="rev_to" id="cbto-3" value="227" onclick="if ($(&#39;#cb-3&#39;).prop(&#39;checked&#39;)) {$(&#39;#cb-2&#39;).prop(&#39;checked&#39;,true);}" /></td>
+<td class="committed_on">2014-10-28 22:50</td>
+<td class="author">markw</td>
+<td class="comments"><p>sd card version - not working, reverting main version to data_io</p></td>
+</tr>
+<tr class="changeset even">
+<td class="id">
+  <a title="修订 177" href="/redmine/projects/eclairexl/repository/revisions/177">177</a>
+</td><td class="checkbox"></td>
+<td class="checkbox"><input type="radio" name="rev_to" id="cbto-4" value="177" onclick="if ($(&#39;#cb-4&#39;).prop(&#39;checked&#39;)) {$(&#39;#cb-3&#39;).prop(&#39;checked&#39;,true);}" /></td>
+<td class="committed_on">2014-09-23 22:09</td>
+<td class="author">markw</td>
+<td class="comments"><p>First cut 5200 support for MIST. Review if we can share with mist atari800 - with a generic.</p></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" value="查看差别" />
+</form></div>
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>载入中...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2016 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

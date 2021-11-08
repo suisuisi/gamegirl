@@ -1,0 +1,6 @@
+set tool_name "ModelSim (Verilog)"
+set corner_file_list {
+    {{"Slow -7 1.2V 100 Model"} {hdmi_colorbar_7_1200mv_100c_slow.vo hdmi_colorbar_7_1200mv_100c_v_slow.sdo}}
+    {{"Slow -7 1.2V -40 Model"} {hdmi_colorbar_7_1200mv_-40c_slow.vo hdmi_colorbar_7_1200mv_-40c_v_slow.sdo}}
+    {{"Fast -M 1.2V -40 Model"} {hdmi_colorbar_min_1200mv_-40c_fast.vo hdmi_colorbar_min_1200mv_-40c_v_fast.sdo}}
+}

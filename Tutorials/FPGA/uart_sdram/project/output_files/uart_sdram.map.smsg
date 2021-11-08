@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at sdram_write.v(27): object "wr_data" differs only in case from object "WR_DATA" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_write.v Line: 27
+Info (10281): Verilog HDL Declaration information at sdram_write.v(31): object "wr_end" differs only in case from object "WR_END" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_write.v Line: 31
+Info (10281): Verilog HDL Declaration information at sdram_read.v(27): object "rd_data" differs only in case from object "RD_DATA" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_read.v Line: 27
+Info (10281): Verilog HDL Declaration information at sdram_read.v(31): object "rd_end" differs only in case from object "RD_END" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_read.v Line: 31
+Info (10281): Verilog HDL Declaration information at sdram_init.v(30): object "init_end" differs only in case from object "INIT_END" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_init.v Line: 30
+Warning (10273): Verilog HDL warning at sdram_arbit.v(176): extended using "x" or "z" File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_arbit.v Line: 176
+Info (10281): Verilog HDL Declaration information at sdram_a_ref.v(32): object "aref_end" differs only in case from object "AREF_END" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/sdram/sdram_a_ref.v Line: 32
+Info (10281): Verilog HDL Declaration information at uart_sdram.v(44): object "DATA_NUM" differs only in case from object "data_num" in the same scope File: F:/FILE/FPGA/OpenCY4/44_uart_sdram/rtl/uart_sdram.v Line: 44

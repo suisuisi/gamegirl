@@ -1,0 +1,14 @@
+# files inherited from the guest core:
+rtl/shared/tgfx16.qip
+
+# The controller module
+rtl/shared/demistify_config_pkg.vhd
+DeMiSTify/controller/controller.qip
+
+# firmware with customisations
+firmware/controller_rom1_byte.vhd
+firmware/controller_rom2_byte.vhd
+
+# Pre-flow scripts
+rtl/shared/build_id_verilog.tcl
+

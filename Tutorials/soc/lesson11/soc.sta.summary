@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pixel_clock'
+Slack : -10.704
+TNS   : -1237.579
+
+Type  : Slow 1200mV 85C Model Setup 'SPI_SCK'
+Slack : -9.203
+TNS   : -284.620
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_27[0]'
+Slack : -8.130
+TNS   : -271.650
+
+Type  : Slow 1200mV 85C Model Setup 'scandoubler:scandoubler|hs_out'
+Slack : -4.474
+TNS   : -54.131
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_27[0]'
+Slack : -4.326
+TNS   : -7.887
+
+Type  : Slow 1200mV 85C Model Hold 'pixel_clock'
+Slack : -2.704
+TNS   : -4.077
+
+Type  : Slow 1200mV 85C Model Hold 'SPI_SCK'
+Slack : -0.853
+TNS   : -0.853
+
+Type  : Slow 1200mV 85C Model Hold 'scandoubler:scandoubler|hs_out'
+Slack : -0.335
+TNS   : -0.335
+
+Type  : Slow 1200mV 85C Model Recovery 'SPI_SCK'
+Slack : -4.363
+TNS   : -26.094
+
+Type  : Slow 1200mV 85C Model Removal 'SPI_SCK'
+Slack : -1.396
+TNS   : -8.041
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -564.936
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : -3.000
+TNS   : -90.872
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pixel_clock'
+Slack : -2.693
+TNS   : -444.908
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'scandoubler:scandoubler|hs_out'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Slow 1200mV 0C Model Setup 'pixel_clock'
+Slack : -9.745
+TNS   : -1114.963
+
+Type  : Slow 1200mV 0C Model Setup 'SPI_SCK'
+Slack : -8.329
+TNS   : -257.249
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_27[0]'
+Slack : -7.417
+TNS   : -243.946
+
+Type  : Slow 1200mV 0C Model Setup 'scandoubler:scandoubler|hs_out'
+Slack : -4.094
+TNS   : -46.637
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_27[0]'
+Slack : -3.912
+TNS   : -7.057
+
+Type  : Slow 1200mV 0C Model Hold 'pixel_clock'
+Slack : -2.436
+TNS   : -3.651
+
+Type  : Slow 1200mV 0C Model Hold 'SPI_SCK'
+Slack : -0.594
+TNS   : -0.594
+
+Type  : Slow 1200mV 0C Model Hold 'scandoubler:scandoubler|hs_out'
+Slack : -0.369
+TNS   : -0.369
+
+Type  : Slow 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : -4.067
+TNS   : -24.322
+
+Type  : Slow 1200mV 0C Model Removal 'SPI_SCK'
+Slack : -1.072
+TNS   : -6.102
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -517.888
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : -3.000
+TNS   : -90.696
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pixel_clock'
+Slack : -2.649
+TNS   : -441.124
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'scandoubler:scandoubler|hs_out'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Fast 1200mV 0C Model Setup 'pixel_clock'
+Slack : -4.547
+TNS   : -489.176
+
+Type  : Fast 1200mV 0C Model Setup 'SPI_SCK'
+Slack : -4.134
+TNS   : -101.232
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_27[0]'
+Slack : -3.325
+TNS   : -111.589
+
+Type  : Fast 1200mV 0C Model Setup 'scandoubler:scandoubler|hs_out'
+Slack : -1.433
+TNS   : -10.442
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_27[0]'
+Slack : -2.162
+TNS   : -4.204
+
+Type  : Fast 1200mV 0C Model Hold 'pixel_clock'
+Slack : -1.399
+TNS   : -2.195
+
+Type  : Fast 1200mV 0C Model Hold 'SPI_SCK'
+Slack : -0.915
+TNS   : -3.701
+
+Type  : Fast 1200mV 0C Model Hold 'scandoubler:scandoubler|hs_out'
+Slack : -0.326
+TNS   : -0.326
+
+Type  : Fast 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : -1.125
+TNS   : -6.692
+
+Type  : Fast 1200mV 0C Model Removal 'SPI_SCK'
+Slack : -1.147
+TNS   : -6.662
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -275.830
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : -3.000
+TNS   : -85.046
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pixel_clock'
+Slack : -1.000
+TNS   : -252.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'scandoubler:scandoubler|hs_out'
+Slack : -1.000
+TNS   : -32.000
+
+------------------------------------------------------------

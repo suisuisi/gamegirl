@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div[2]'
+Slack : -12.150
+TNS   : -3332.031
+
+Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -10.249
+TNS   : -35.878
+
+Type  : Slow 1200mV 85C Model Setup 'SPI_SCK'
+Slack : -7.233
+TNS   : -262.786
+
+Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -6.690
+TNS   : -22.722
+
+Type  : Slow 1200mV 85C Model Setup 'vga:vga|hs'
+Slack : -1.996
+TNS   : -46.942
+
+Type  : Slow 1200mV 85C Model Hold 'vga:vga|hs'
+Slack : -1.356
+TNS   : -1.356
+
+Type  : Slow 1200mV 85C Model Hold 'SPI_SCK'
+Slack : -0.356
+TNS   : -0.356
+
+Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -0.209
+TNS   : -0.672
+
+Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.204
+TNS   : -0.204
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div[2]'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SPI_SCK'
+Slack : -3.970
+TNS   : -23.802
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_div[2]'
+Slack : -3.734
+TNS   : -643.753
+
+Type  : Slow 1200mV 85C Model Removal 'SPI_SCK'
+Slack : -1.580
+TNS   : -9.445
+
+Type  : Slow 1200mV 85C Model Removal 'clk_div[2]'
+Slack : 3.535
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -536.617
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div[2]'
+Slack : -2.693
+TNS   : -591.071
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga:vga|hs'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 15.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : 18.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div[2]'
+Slack : -11.032
+TNS   : -3018.683
+
+Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -9.267
+TNS   : -32.272
+
+Type  : Slow 1200mV 0C Model Setup 'SPI_SCK'
+Slack : -6.720
+TNS   : -236.199
+
+Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -5.987
+TNS   : -20.006
+
+Type  : Slow 1200mV 0C Model Setup 'vga:vga|hs'
+Slack : -1.730
+TNS   : -39.856
+
+Type  : Slow 1200mV 0C Model Hold 'vga:vga|hs'
+Slack : -1.187
+TNS   : -1.187
+
+Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -0.291
+TNS   : -0.985
+
+Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.286
+TNS   : -0.286
+
+Type  : Slow 1200mV 0C Model Hold 'SPI_SCK'
+Slack : -0.198
+TNS   : -0.198
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div[2]'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : -3.689
+TNS   : -22.119
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_div[2]'
+Slack : -3.275
+TNS   : -564.317
+
+Type  : Slow 1200mV 0C Model Removal 'SPI_SCK'
+Slack : -1.269
+TNS   : -7.564
+
+Type  : Slow 1200mV 0C Model Removal 'clk_div[2]'
+Slack : 3.183
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -492.418
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div[2]'
+Slack : -2.649
+TNS   : -588.783
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga:vga|hs'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 15.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : 18.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.555
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div[2]'
+Slack : -5.569
+TNS   : -1472.894
+
+Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -5.217
+TNS   : -19.050
+
+Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -3.616
+TNS   : -12.953
+
+Type  : Fast 1200mV 0C Model Setup 'SPI_SCK'
+Slack : -2.810
+TNS   : -89.707
+
+Type  : Fast 1200mV 0C Model Setup 'vga:vga|hs'
+Slack : -0.424
+TNS   : -7.303
+
+Type  : Fast 1200mV 0C Model Hold 'vga:vga|hs'
+Slack : -0.975
+TNS   : -0.975
+
+Type  : Fast 1200mV 0C Model Hold 'SPI_SCK'
+Slack : -0.651
+TNS   : -2.433
+
+Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.003
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div[2]'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_div[2]'
+Slack : -1.392
+TNS   : -239.109
+
+Type  : Fast 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : -0.936
+TNS   : -5.606
+
+Type  : Fast 1200mV 0C Model Removal 'SPI_SCK'
+Slack : -1.170
+TNS   : -7.010
+
+Type  : Fast 1200mV 0C Model Removal 'clk_div[2]'
+Slack : 1.797
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : -3.000
+TNS   : -259.864
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div[2]'
+Slack : -1.000
+TNS   : -403.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga:vga|hs'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 15.414
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : 17.935
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.595
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,6 @@
+# Support files from mist-modules, but with some customisations to reduce BRAM usage.
+
+set_global_assignment -name VHDL_FILE    [file join $::quartus(qip_path) ../../mist-modules/mist.vhd]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ../../mist-modules/user_io.v]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) mist_video.qip]
+

@@ -1,0 +1,56 @@
+--- io.c.orig	2018-10-29 16:29:18.772262855 +0100
++++ io.c	2018-10-30 10:06:33.713972452 +0100
+@@ -27,6 +27,8 @@
+ #define CYCLE_NEVER 0xFFFFFFFF
+ #define MIN_POLL_INTERVAL 6840
+ 
++#define SWAP16(a)  ((((a)&0xff)<<8)|(((a)&0xff00)>>8))
++
+ const char * device_type_names[] = {
+ 	"SMS gamepad",
+ 	"3-button gamepad",
+@@ -529,6 +531,44 @@
+ 			char *path = alloc_concat_m(3, parts);
+ 			free(screenshot_base);
+ 			render_save_screenshot(path);
++			if (current_system->type == SYSTEM_GENESIS) {
++			  char *name = strdup(path);			  
++			  genesis_context *gen = (genesis_context *)current_system;
++			  
++			  // save CRAM, adjust endianess
++			  uint16_t cram[CRAM_SIZE];
++			  for(int i=0;i<CRAM_SIZE;i++) cram[i] = SWAP16(gen->vdp->cram[i]);
++			  strcpy(name+strlen(name)-3, "crm");
++			  printf("Saving CRAM to %s\n", name);
++			  FILE *file=fopen(name, "wb");
++			  fwrite(&cram, CRAM_SIZE, sizeof(uint16_t), file);
++			  fclose(file);
++
++			  // save VRAM
++			  strcpy(name+strlen(name)-3, "vrm");
++			  printf("Saving VRAM to %s\n", name);
++			  file=fopen(name, "wb");
++			  fwrite(gen->vdp->vdpmem, VRAM_SIZE, sizeof(uint8_t), file);
++			  fclose(file);
++			  
++			  // save VSRAM, adjust endianess
++			  uint16_t vsram[VSRAM_SIZE];
++			  for(int i=0;i<VSRAM_SIZE;i++) vsram[i] = SWAP16(gen->vdp->vsram[i]);
++			  strcpy(name+strlen(name)-3, "vsr");
++			  printf("Saving VSRAM to %s\n", name);
++			  file=fopen(name, "wb");
++			  fwrite(vsram, VSRAM_SIZE, sizeof(uint16_t), file);
++			  fclose(file);
++			  
++			  // save VDP registers
++			  strcpy(name+strlen(name)-3, "reg");
++			  printf("Saving VDP registers to %s\n", name);
++			  file=fopen(name, "wb");
++			  fwrite(gen->vdp->regs, VDP_REGS, sizeof(uint8_t), file);
++			  fclose(file);
++			  
++			  free(name);
++			}
+ 			break;
+ 		}
+ 		case UI_EXIT:

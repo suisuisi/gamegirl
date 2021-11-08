@@ -1,0 +1,8 @@
+PLLJ_PLLSPE_INFO.txt
+*.bak
+build_id.vhd
+syn/
+db/
+incremental_db/
+greybox_tmp/
+

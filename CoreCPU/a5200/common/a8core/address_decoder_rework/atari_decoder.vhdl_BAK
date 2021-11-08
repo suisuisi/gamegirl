@@ -1,0 +1,156 @@
+
+---------------------------------------------------------------------------
+-- (c) 2017 mark watson
+-- I am happy for anyone to use this for non-commercial use.
+-- If my vhdl files are used commercially or otherwise sold,
+-- please contact me for explicit permission at scrameta (gmail).
+-- This applies for source and binary form and derived works.
+---------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_MISC.all;
+
+
+ENTITY atari_decoder IS
+GENERIC
+(
+	system : integer := 0; -- 0=Atari XL,1=Atari 800, 10=Atari5200 (space left for more systems)
+);
+PORT 
+( 
+	ADDR : in std_logic_vector(15 downto 0);
+	MPD_N : in std_logic;
+	PORTB : in std_logic_vector(7 downto 0);
+	EXTENDED_SELF_TEST : in std_logic;
+
+	EMU_CART_RD4 : in std_logic;
+	EMU_CART_RD5 : in std_logic;
+
+	FREEZER : in std_logic;
+
+	DEVICE_OUT: out std_logic_vector(3 downto 0)
+	ADDRCALC_OUT: out std_logic_vector(3 downto 0)
+
+	--0 = RAM
+	--1 = BASIC ROM
+	--2 = OS ROM
+	--3 = ANTIC
+	--4 = S5
+	--5 = S5
+	--6 = POKEY1
+	--7 = POKEY2
+	--8 = S4
+	--9 = GTIA
+	--a = CCTL
+	--b = FF
+	--c = PIA
+	--d = BANKED RAM
+	--f = FREEZER
+
+	--0 = RAM
+	--1 = BASIC ROM
+	--2 = OS ROM
+	--3 = ANTIC
+	--4 = S5
+	--5 = S5
+	--6 = POKEY1
+	--7 = POKEY2
+	--8 = S4
+	--9 = GTIA
+	--a = CCTL
+	--b = FF
+	--c = PIA
+	--d = BANKED RAM
+	--f = FREEZER
+
+	-- SDRAM vs block ram
+	-- Multiple freezer access types
+
+	--ADDR -> CALC         ->
+	--ADDR -> HMUX -> LMUX -> ADDRMUX -> 
+	--STATE                           -> SELMUX
+);
+
+END atari_decoder;
+
+ARCHITECTURE vhdl OF atari_decoder IS
+	signal DEVICE: std_logic_vector(3 downto 0)
+BEGIN
+
+	process(addr,mpd_n,portb,extended_self_test,emu_cart_rd4,emu_cart_rd5)
+	begin
+		DEVICE <= x"0";
+
+		case addr(15 downto 11) is
+			when X"D"&"0" =>
+				case addr(10 downto 8) is
+					-- GTIA
+					when "000" =>
+						DEVICE <= "9";
+					-- POKEY
+					when "010" =>				
+						DEVICE <= "011"&(stereo=1 and addr_next(4));
+					-- PIA
+					when "011" =>
+						DEVICE <= x"c";
+						
+					-- ANTIC
+					when "100" =>
+						DEVICE <= x"3";
+						
+					-- CART_CONFIG
+					when "101" =>
+						DEVICE <= x"a";
+						
+					otherwise =>
+						DEVICE <= "b";
+				end case
+									
+			-- SELF TEST ROM 0x5000->0x57ff and XE RAM
+			when X"5"&"0" =>
+				DEVICE <= "00"& (not(portb(7)) and portb(0) and extended_self_test) & "0";
+			
+			-- 0x80 cart
+			when 
+				X"8"&"0"|"8"&"1"
+				|X"9"&"0"|"9"&"1" =>
+		
+				DEVICE <= (emu_cart_rd4)&"000"
+		
+			-- 0xa0 cart (BASIC ROM 0xa000 - 0xbfff (8k))
+			when 
+				X"A"&"0"|"A"&"1"
+				|X"B"&"0"|"B"&"1" =>
+				
+				DEVICE <= "0"&(emu_cart_rd5")&"0"&(not(portb(1)));
+
+			-- banked area
+			when 
+				X"4"&"0"|"4"&"1"
+				|X"5"&"0"|"5"&"1" 
+				|X"6"&"0"|"6"&"1" 
+				|X"7"&"0"|"7"&"1" =>
+
+				DEVICE <= x"d";
+				
+			-- OS ROM d800->0xffff (math pack)
+			when X"D"&"1" =>
+				DEVICE <= "00"& (portb(0) and pbi_mpd_n)&"0";
+
+			-- OS ROM 0xc00->0xcff				
+			-- OS ROM e000->0xffff
+			when 
+				X"C"&"0"|"C"&"1"
+				|X"E"&"0"|"E"&"1" =>
+				|X"F"&"0"|"F"&"1" =>
+				
+				DEVICE <= "00"& (portb(0))&"0";
+				
+			when others =>
+		end case;
+	end process;
+
+	DEVICE_OUT <= DEVICE or freezer&freezer&freezer&freezer;
+end vhdl;
+

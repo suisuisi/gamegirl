@@ -1,0 +1,9 @@
+[submodule "src/T80"]
+	path = src/T80
+	url = https://github.com/mist-devel/T80.git
+[submodule "src/board/mist/mist-modules"]
+	path = src/board/mist/mist-modules
+	url = https://github.com/mist-devel/mist-modules.git
+[submodule "src/fdc1772"]
+	path = src/fdc1772
+	url = https://github.com/mist-devel/fdc1772-verilator.git

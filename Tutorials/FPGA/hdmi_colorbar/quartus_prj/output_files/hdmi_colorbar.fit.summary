@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jan 21 22:40:12 2021
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : hdmi_colorbar
+Top-level Entity Name : hdmi_colorbar
+Family : Cyclone IV E
+Device : EP4CE22F17I7
+Timing Models : Final
+Total logic elements : 394 / 22,320 ( 2 % )
+    Total combinational functions : 384 / 22,320 ( 2 % )
+    Dedicated logic registers : 164 / 22,320 ( < 1 % )
+Total registers : 180
+Total pins : 12 / 154 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

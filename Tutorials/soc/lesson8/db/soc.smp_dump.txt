@@ -1,0 +1,17 @@
+
+State Machine - |soc|sd_card:sd_card|write_state
+Name write_state.WR_STATE_BUSY write_state.WR_STATE_SEND_DRESP write_state.WR_STATE_RECV_CRC1 write_state.WR_STATE_RECV_CRC0 write_state.WR_STATE_RECV_DATA write_state.WR_STATE_EXP_DTOKEN write_state.WR_STATE_IDLE 
+write_state.WR_STATE_IDLE 0 0 0 0 0 0 0 
+write_state.WR_STATE_EXP_DTOKEN 0 0 0 0 0 1 1 
+write_state.WR_STATE_RECV_DATA 0 0 0 0 1 0 1 
+write_state.WR_STATE_RECV_CRC0 0 0 0 1 0 0 1 
+write_state.WR_STATE_RECV_CRC1 0 0 1 0 0 0 1 
+write_state.WR_STATE_SEND_DRESP 0 1 0 0 0 0 1 
+write_state.WR_STATE_BUSY 1 0 0 0 0 0 1 
+
+State Machine - |soc|sd_card:sd_card|read_state
+Name read_state.RD_STATE_SEND_DATA read_state.RD_STATE_SEND_TOKEN read_state.RD_STATE_WAIT_IO read_state.RD_STATE_IDLE 
+read_state.RD_STATE_IDLE 0 0 0 0 
+read_state.RD_STATE_WAIT_IO 0 0 1 1 
+read_state.RD_STATE_SEND_TOKEN 0 1 0 1 
+read_state.RD_STATE_SEND_DATA 1 0 0 1 

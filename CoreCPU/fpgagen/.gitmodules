@@ -1,0 +1,18 @@
+[submodule "ZPUFlex"]
+	path = ZPUFlex
+	url = https://github.com/robinsonb5/ZPUFlex.git
+[submodule "jt12"]
+	path = jt12
+	url = https://github.com/jotego/jt12
+[submodule "jt89"]
+	path = jt89
+	url = https://github.com/jotego/jt89
+[submodule "src/fx68k"]
+	path = src/fx68k
+	url = https://github.com/mist-devel/fx68k
+[submodule "Board/mist/mist-modules"]
+	path = Board/mist/mist-modules
+	url = https://github.com/mist-devel/mist-modules.git
+[submodule "src/T80"]
+	path = src/T80
+	url = https://github.com/mist-devel/T80.git

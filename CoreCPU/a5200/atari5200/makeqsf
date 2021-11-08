@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+use strict;
+
+my $qsf_in = shift @ARGV;
+my $qsf_out = $qsf_in;
+$qsf_out =~ s/.*\///;
+
+open (QSF_IN,$qsf_in) or die "Failed to open $qsf_in";
+my @qsf_base = <QSF_IN>;
+close (QSF_IN);
+
+open (QSF_OUT,">$qsf_out") or die "Failed to open $qsf_out";
+print QSF_OUT @qsf_base;
+print QSF_OUT "\n";
+
+foreach (@ARGV)
+{
+	my @vhdl = glob ("$_/*.vhd");
+	push @vhdl, glob ("$_/*.vhdl");
+	my @systemverilog = glob ("$_/*.sv");
+	my @verilog = glob ("$_/*.v");
+	my @qip = glob ("$_/*.qip");
+
+	foreach (@systemverilog)
+	{
+		print QSF_OUT "set_global_assignment -name SYSTEMVERILOG_FILE $_\n";
+	}
+
+	foreach (@verilog)
+	{
+		print QSF_OUT "set_global_assignment -name VERILOG_FILE $_\n";
+	}
+
+	foreach (@vhdl)
+	{
+		print QSF_OUT "set_global_assignment -name VHDL_FILE $_\n";
+	}
+
+	foreach (@qip)
+	{
+		print QSF_OUT "set_global_assignment -name QIP_FILE $_\n";
+	}
+}
+
+close (QSF_OUT);
+

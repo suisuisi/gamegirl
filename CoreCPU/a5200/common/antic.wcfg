@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="antic.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="antic_tb" />
+            <top_module name="attributes" />
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_misc" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="48" />
+   <wave_markers>
+      <marker time="517213670600" label="" />
+   </wave_markers>
+   <wvobject fp_name="/antic_tb/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/clk_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_a</obj_property>
+      <obj_property name="ObjectShortName">clk_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cpu_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cpu_data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_data_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cpu_wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_wr_en</obj_property>
+      <obj_property name="ObjectShortName">cpu_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/memory_ready_antic" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memory_ready_antic</obj_property>
+      <obj_property name="ObjectShortName">memory_ready_antic</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/memory_ready_cpu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memory_ready_cpu</obj_property>
+      <obj_property name="ObjectShortName">memory_ready_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/memory_data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memory_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_data_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic_enable_179" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">antic_enable_179</obj_property>
+      <obj_property name="ObjectShortName">antic_enable_179</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/enable_179_memwait" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_179_memwait</obj_property>
+      <obj_property name="ObjectShortName">enable_179_memwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cpu_shared_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_shared_enable</obj_property>
+      <obj_property name="ObjectShortName">cpu_shared_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[2:0]</obj_property>
+      <obj_property name="ObjectShortName">an[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cc_out_orig" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cc_out_orig</obj_property>
+      <obj_property name="ObjectShortName">cc_out_orig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cc_out_used" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cc_out_used</obj_property>
+      <obj_property name="ObjectShortName">cc_out_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/cc_out_used_doubled" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cc_out_used_doubled</obj_property>
+      <obj_property name="ObjectShortName">cc_out_used_doubled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/fetch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch</obj_property>
+      <obj_property name="ObjectShortName">fetch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/fetch_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_address[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/refresh" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">refresh</obj_property>
+      <obj_property name="ObjectShortName">refresh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/hcount_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hcount_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hcount_out[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/vcount_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vcount_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">vcount_out[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_clock_character_name" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clock_character_name</obj_property>
+      <obj_property name="ObjectShortName">dma_clock_character_name</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_clock_character_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clock_character_inc</obj_property>
+      <obj_property name="ObjectShortName">dma_clock_character_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_clock_bitmap_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clock_bitmap_data</obj_property>
+      <obj_property name="ObjectShortName">dma_clock_bitmap_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_clock_character_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clock_character_data</obj_property>
+      <obj_property name="ObjectShortName">dma_clock_character_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/character_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">character_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">character_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/displayed_character_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">displayed_character_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">displayed_character_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/character_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">character_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">character_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/display_shift_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_shift_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">display_shift_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/instruction_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/line_buffer_address_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">line_buffer_address_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_address_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/line_buffer_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">line_buffer_write</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/enable_shift" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_shift</obj_property>
+      <obj_property name="ObjectShortName">enable_shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/playfield_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">playfield_load</obj_property>
+      <obj_property name="ObjectShortName">playfield_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/delay_display_shift_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_display_shift_reg[24:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_display_shift_reg[24:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/antic_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">antic_ready</obj_property>
+      <obj_property name="ObjectShortName">antic_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/wsync_delay/data_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in</obj_property>
+      <obj_property name="ObjectShortName">data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_fetch_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_fetch_reg</obj_property>
+      <obj_property name="ObjectShortName">dma_fetch_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_cache_ready_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_cache_ready_reg</obj_property>
+      <obj_property name="ObjectShortName">dma_cache_ready_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/load_display_shift_from_memory" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_display_shift_from_memory</obj_property>
+      <obj_property name="ObjectShortName">load_display_shift_from_memory</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_cache_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_cache_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_cache_next[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_cache_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_cache_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_cache_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_fetch_destination_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_fetch_destination_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_fetch_destination_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/dma_fetch_destination_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_fetch_destination_next[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_fetch_destination_next[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/antic_dma_clock1/playfield_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">playfield_start</obj_property>
+      <obj_property name="ObjectShortName">playfield_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/antic_dma_clock1/dma_shiftreg_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_shiftreg_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_shiftreg_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/antic_dma_clock1/enable_dma" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_dma</obj_property>
+      <obj_property name="ObjectShortName">enable_dma</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/playfield_dma_start_shiftreg_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">playfield_dma_start_shiftreg_next[4:0]</obj_property>
+      <obj_property name="ObjectShortName">playfield_dma_start_shiftreg_next[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/antic_tb/antic1/playfield_dma_start_shiftreg_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">playfield_dma_start_shiftreg_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">playfield_dma_start_shiftreg_reg[4:0]</obj_property>
+   </wvobject>
+</wave_config>

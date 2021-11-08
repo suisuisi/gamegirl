@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="soc">
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|image:image|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nv91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|osd:osd|altsyncram:osd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_66d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|scandoubler:scandoubler|altsyncram:sd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_66d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|video:video|altsyncram:vmem_rtl_0" CBX_FILE_NAME="altsyncram_o5h1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

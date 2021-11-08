@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jan 30 17:08:04 2021
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : pong
+Top-level Entity Name : pong
+Family : Cyclone IV E
+Total logic elements : 44
+    Total combinational functions : 44
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

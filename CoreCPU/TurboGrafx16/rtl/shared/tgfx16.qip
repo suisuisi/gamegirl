@@ -1,0 +1,8 @@
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) TGFX16_Shared_Top.sv ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) mist_core.qip ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) hybrid_pwm_sd_2ndorder.v ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) sdram_amr.sv ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) data_io.v ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) ../pce.qip ]
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) tgfx16.sdc ]
+

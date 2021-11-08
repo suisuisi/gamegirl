@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="soc">
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|YM2149:ym2149|vol_table:u_vol_table|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_2su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|osd:osd|altsyncram:osd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_66d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|vga:vga|altsyncram:vmem_rtl_0" CBX_FILE_NAME="altsyncram_u8d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|pll:pll|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|sd_card:sd_card|altsyncram:buffer_rtl_0" CBX_FILE_NAME="altsyncram_opd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|sd_card:sd_card|altsyncram:cid_rtl_0" CBX_FILE_NAME="altsyncram_ssc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|soc|sd_card:sd_card|altsyncram:csd_rtl_0" CBX_FILE_NAME="altsyncram_ssc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,5 @@
+vectrex.qip
+../../DeMiSTify/controller/controller.qip
+firmware/controller_rom1_byte.vhd
+firmware/controller_rom2_byte.vhd
+

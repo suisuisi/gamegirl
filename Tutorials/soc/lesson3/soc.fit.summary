@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jan 28 21:27:28 2021
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : soc
+Top-level Entity Name : soc
+Family : Cyclone IV E
+Device : EP4CE22F17I7
+Timing Models : Final
+Total logic elements : 2,176 / 22,320 ( 10 % )
+    Total combinational functions : 2,167 / 22,320 ( 10 % )
+    Dedicated logic registers : 394 / 22,320 ( 2 % )
+Total registers : 394
+Total pins : 23 / 154 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 193,536 / 608,256 ( 32 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

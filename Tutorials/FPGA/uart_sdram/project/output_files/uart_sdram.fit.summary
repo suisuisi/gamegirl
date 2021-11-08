@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jan 22 00:01:38 2021
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : uart_sdram
+Top-level Entity Name : uart_sdram
+Family : Cyclone IV E
+Device : EP4CE22F17I7
+Timing Models : Final
+Total logic elements : 729 / 22,320 ( 3 % )
+    Total combinational functions : 675 / 22,320 ( 3 % )
+    Dedicated logic registers : 488 / 22,320 ( 2 % )
+Total registers : 488
+Total pins : 43 / 154 ( 28 % )
+Total virtual pins : 0
+Total memory bits : 32,768 / 608,256 ( 5 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,112 @@
+period a,0
+period b,1
+period c,0xFFF
+period no,0
+vol a, 1
+vol b, 2
+vol c, 4
+# volume sweep
+wait 255
+vol a, 2
+wait 255
+vol a, 4
+wait 255
+vol a, 8
+wait 255
+vol a, 0xa
+wait 255
+vol a, 0xd
+wait 255
+vol a, 0xf
+wait 255
+# EG test
+vol a,0x10
+shape 0x0
+period env,0x80
+wait 255
+wait 255
+period no,7
+wait 255
+period no,1f
+wait 255
+shape 0x0
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x1
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x2
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x3
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x4
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x5
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x6
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x7
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x8
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0x9
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xa
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xb
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xc
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xd
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xe
+wait 255
+wait 255
+wait 255
+wait 255
+shape 0xf
+wait 255
+wait 255
+wait 255
+wait 255
+finish

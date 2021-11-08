@@ -1,0 +1,154 @@
+|soc
+CLOCK_27[0] => CLOCK_27[0].IN1
+CLOCK_27[1] => ~NO_FANOUT~
+SDRAM_nCS <= <VCC>
+VGA_HS <= vga:vga.hs
+VGA_VS <= vga:vga.vs
+VGA_R[0] <= vga:vga.r
+VGA_R[1] <= vga:vga.r
+VGA_R[2] <= vga:vga.r
+VGA_R[3] <= vga:vga.r
+VGA_R[4] <= vga:vga.r
+VGA_R[5] <= vga:vga.r
+VGA_G[0] <= vga:vga.g
+VGA_G[1] <= vga:vga.g
+VGA_G[2] <= vga:vga.g
+VGA_G[3] <= vga:vga.g
+VGA_G[4] <= vga:vga.g
+VGA_G[5] <= vga:vga.g
+VGA_B[0] <= vga:vga.b
+VGA_B[1] <= vga:vga.b
+VGA_B[2] <= vga:vga.b
+VGA_B[3] <= vga:vga.b
+VGA_B[4] <= vga:vga.b
+VGA_B[5] <= vga:vga.b
+
+
+|soc|vga:vga
+pclk => pixel[0].CLK
+pclk => pixel[1].CLK
+pclk => pixel[2].CLK
+pclk => pixel[3].CLK
+pclk => pixel[4].CLK
+pclk => pixel[5].CLK
+pclk => pixel[6].CLK
+pclk => pixel[7].CLK
+pclk => vs~reg0.CLK
+pclk => v_cnt[0].CLK
+pclk => v_cnt[1].CLK
+pclk => v_cnt[2].CLK
+pclk => v_cnt[3].CLK
+pclk => v_cnt[4].CLK
+pclk => v_cnt[5].CLK
+pclk => v_cnt[6].CLK
+pclk => v_cnt[7].CLK
+pclk => v_cnt[8].CLK
+pclk => v_cnt[9].CLK
+pclk => hs~reg0.CLK
+pclk => h_cnt[0].CLK
+pclk => h_cnt[1].CLK
+pclk => h_cnt[2].CLK
+pclk => h_cnt[3].CLK
+pclk => h_cnt[4].CLK
+pclk => h_cnt[5].CLK
+pclk => h_cnt[6].CLK
+pclk => h_cnt[7].CLK
+pclk => h_cnt[8].CLK
+pclk => h_cnt[9].CLK
+hs <= hs~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs~reg0.DB_MAX_OUTPUT_PORT_TYPE
+r[0] <= <GND>
+r[1] <= <GND>
+r[2] <= <GND>
+r[3] <= pixel[5].DB_MAX_OUTPUT_PORT_TYPE
+r[4] <= pixel[6].DB_MAX_OUTPUT_PORT_TYPE
+r[5] <= pixel[7].DB_MAX_OUTPUT_PORT_TYPE
+g[0] <= <GND>
+g[1] <= <GND>
+g[2] <= <GND>
+g[3] <= pixel[2].DB_MAX_OUTPUT_PORT_TYPE
+g[4] <= pixel[3].DB_MAX_OUTPUT_PORT_TYPE
+g[5] <= pixel[4].DB_MAX_OUTPUT_PORT_TYPE
+b[0] <= <GND>
+b[1] <= <GND>
+b[2] <= <GND>
+b[3] <= <GND>
+b[4] <= pixel[0].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= pixel[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soc|pll:pll
+inclk0 => sub_wire3[0].IN1
+c0 <= altpll:altpll_component.clk
+
+
+|soc|pll:pll|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|soc|pll:pll|altpll:altpll_component|pll_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+

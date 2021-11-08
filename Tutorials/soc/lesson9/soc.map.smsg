@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at osd.v(31): object "OSD_COLOR" differs only in case from object "osd_color" in the same scope
+Info (10281): Verilog HDL Declaration information at vga.v(24): object "hs" differs only in case from object "HS" in the same scope
+Info (10281): Verilog HDL Declaration information at vga.v(25): object "vs" differs only in case from object "VS" in the same scope

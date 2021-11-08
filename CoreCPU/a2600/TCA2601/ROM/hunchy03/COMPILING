@@ -1,0 +1,11 @@
+To compile this code in DASM you need the Atari 2600 support files 
+macro.h and vcs.h.   These files are available from the DASM page
+which is currently at the following location:
+
+http://www.taswegian.com/TwoHeaded/Atari2600/dasm/
+
+These files are not included here as they are not licensed for 
+redistribution.
+
+Chris
+2005

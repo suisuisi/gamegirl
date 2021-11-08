@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if ! verilator ../../hdl/alt/eg_comb.v eg2.cpp --cc --exe --trace --coverage> s; then
+	cat s; rm s
+	exit $?
+fi
+
+if ! make -j -C obj_dir -f Veg_comb.mk Veg_comb > s; then
+	cat s; rm s
+	exit $?
+fi
+
+if ! obj_dir/Veg_comb $*; then
+	exit $?
+fi
+verilator_coverage logs/coverage.dat --annotate coverage

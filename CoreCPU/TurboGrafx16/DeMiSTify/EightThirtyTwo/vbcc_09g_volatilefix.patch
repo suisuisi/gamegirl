@@ -1,0 +1,100 @@
+Index: flow.c
+===================================================================
+RCS file: /ibaug/pro/compiler/vbccsystem/vbcc/flow.c,v
+retrieving revision 1.8
+diff -C 2 -r1.8 flow.c
+*** flow.c	14 Jun 2017 17:33:13 -0000	1.8
+--- flow.c	20 Apr 2020 14:21:38 -0000
+***************
+*** 447,451 ****
+                      np=ng->end;
+                      if(!np){ i=-1;break;}
+!                     if(ng->branchout&&np->code!=BRA){i=-1;break;}
+                      if(np->code==BRA) np=np->prev;
+                      if(!np){ i=-1;break;}
+--- 447,451 ----
+                      np=ng->end;
+                      if(!np){ i=-1;break;}
+!                     if(ng->branchout&&(np->code!=BRA||ng->branchout!=g)){i=-1;break;}
+                      if(np->code==BRA) np=np->prev;
+                      if(!np){ i=-1;break;}
+Index: ic.c
+===================================================================
+RCS file: /ibaug/pro/compiler/vbccsystem/vbcc/ic.c,v
+retrieving revision 1.44
+diff -C 2 -r1.44 ic.c
+*** ic.c	2 Mar 2020 20:23:57 -0000	1.44
+--- ic.c	20 Apr 2020 19:40:07 -0000
+***************
+*** 730,733 ****
+--- 730,734 ----
+  	  p->o.dtyp=POINTER_TYPE(p->ntyp);
+          }
++ 	if(p->left->ntyp->next->flags&VOLATILE) p->o.dtyp|=PVOLATILE;
+          return;
+      }
+Index: supp.c
+===================================================================
+RCS file: /ibaug/pro/compiler/vbccsystem/vbcc/supp.c,v
+retrieving revision 1.36
+diff -C 2 -r1.36 supp.c
+*** supp.c	16 Apr 2020 21:38:01 -0000	1.36
+--- supp.c	20 Apr 2020 19:40:07 -0000
+***************
+*** 1025,1028 ****
+--- 1025,1029 ----
+      if(p->dtyp&CONST) fprintf(f,"const ");
+      if(p->dtyp&VOLATILE) fprintf(f,"volatile ");
++     if(p->dtyp&PVOLATILE) fprintf(f,"pvolatile ");
+      fprintf(f,"%s]",typname[p->dtyp&NQ]);
+    }
+***************
+*** 1329,1333 ****
+  {
+    if(o->flags&DREFOBJ){
+!     if(o->dtyp&VOLATILE)
+        return 1;
+      if((o->flags&VAR)&&ISPOINTER(o->v->vtyp->flags)&&(o->v->vtyp->next->flags&VOLATILE))
+--- 1330,1334 ----
+  {
+    if(o->flags&DREFOBJ){
+!     if(o->dtyp&(VOLATILE|PVOLATILE))
+        return 1;
+      if((o->flags&VAR)&&ISPOINTER(o->v->vtyp->flags)&&(o->v->vtyp->next->flags&VOLATILE))
+Index: supp.h
+===================================================================
+RCS file: /ibaug/pro/compiler/vbccsystem/vbcc/supp.h,v
+retrieving revision 1.43
+diff -C 2 -r1.43 supp.h
+*** supp.h	18 Apr 2020 13:39:40 -0000	1.43
+--- supp.h	20 Apr 2020 19:40:07 -0000
+***************
+*** 66,69 ****
+--- 66,70 ----
+  #define BOOLEAN (STRINGCONST<<1)
+  #define SIGNED_CHARACTER (BOOLEAN<<1)
++ #define PVOLATILE (SIGNED_CHARACTER<<1)
+  #ifdef HAVE_ECPP
+  #define ECPP_VIRTUAL 1
+***************
+*** 197,203 ****
+    zumax stack2;
+  } function_info;
+  /*  struct for types.    */
+  typedef struct Typ{
+!   int flags;  /*  see above   */
+    struct Typ *next;
+    struct struct_declaration *exact;   /* used for STRUCT/UNION/FUNKT  */
+--- 198,208 ----
+    zumax stack2;
+  } function_info;
++ typedef int typfl;
++ #if PVOLATILE >= INT_MAX
++ #error "need host with larger int size"
++ #endif
+  /*  struct for types.    */
+  typedef struct Typ{
+!   typfl flags;  /*  see above   */
+    struct Typ *next;
+    struct struct_declaration *exact;   /* used for STRUCT/UNION/FUNKT  */
+

@@ -1,0 +1,51 @@
+
+State Machine - |uart_sdram|sdram_top:sdram_top_inst|sdram_ctrl:sdram_ctrl_inst|sdram_read:sdram_read_inst|read_state
+Name read_state.RD_PRE read_state.RD_TRP read_state.RD_DATA read_state.RD_CL read_state.RD_TRCD read_state.RD_READ read_state.RD_ACTIVE read_state.RD_IDLE read_state.RD_END 
+read_state.RD_IDLE 0 0 0 0 0 0 0 0 0 
+read_state.RD_ACTIVE 0 0 0 0 0 0 1 1 0 
+read_state.RD_READ 0 0 0 0 0 1 0 1 0 
+read_state.RD_TRCD 0 0 0 0 1 0 0 1 0 
+read_state.RD_CL 0 0 0 1 0 0 0 1 0 
+read_state.RD_DATA 0 0 1 0 0 0 0 1 0 
+read_state.RD_TRP 0 1 0 0 0 0 0 1 0 
+read_state.RD_PRE 1 0 0 0 0 0 0 1 0 
+read_state.RD_END 0 0 0 0 0 0 0 1 1 
+
+State Machine - |uart_sdram|sdram_top:sdram_top_inst|sdram_ctrl:sdram_ctrl_inst|sdram_write:sdram_write_inst|write_state
+Name write_state.WR_TRP write_state.WR_END write_state.WR_PRE write_state.WR_DATA write_state.WR_TRCD write_state.WR_WRITE write_state.WR_ACTIVE write_state.WR_IDLE 
+write_state.WR_IDLE 0 0 0 0 0 0 0 0 
+write_state.WR_ACTIVE 0 0 0 0 0 0 1 1 
+write_state.WR_WRITE 0 0 0 0 0 1 0 1 
+write_state.WR_TRCD 0 0 0 0 1 0 0 1 
+write_state.WR_DATA 0 0 0 1 0 0 0 1 
+write_state.WR_PRE 0 0 1 0 0 0 0 1 
+write_state.WR_END 0 1 0 0 0 0 0 1 
+write_state.WR_TRP 1 0 0 0 0 0 0 1 
+
+State Machine - |uart_sdram|sdram_top:sdram_top_inst|sdram_ctrl:sdram_ctrl_inst|sdram_a_ref:sdram_a_ref_inst|aref_state
+Name aref_state.AREF_END aref_state.AREF_TRF aref_state.AREF_TRP aref_state.AUTO_REF aref_state.AREF_PCHA aref_state.AREF_IDLE 
+aref_state.AREF_IDLE 0 0 0 0 0 0 
+aref_state.AREF_PCHA 0 0 0 0 1 1 
+aref_state.AUTO_REF 0 0 0 1 0 1 
+aref_state.AREF_TRP 0 0 1 0 0 1 
+aref_state.AREF_TRF 0 1 0 0 0 1 
+aref_state.AREF_END 1 0 0 0 0 1 
+
+State Machine - |uart_sdram|sdram_top:sdram_top_inst|sdram_ctrl:sdram_ctrl_inst|sdram_arbit:sdram_arbit_inst|state
+Name state.READ state.WRITE state.AREF state.ARBIT state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.ARBIT 0 0 0 1 1 
+state.AREF 0 0 1 0 1 
+state.WRITE 0 1 0 0 1 
+state.READ 1 0 0 0 1 
+
+State Machine - |uart_sdram|sdram_top:sdram_top_inst|sdram_ctrl:sdram_ctrl_inst|sdram_init:sdram_init_inst|init_state
+Name init_state.INIT_TMRD init_state.INIT_END init_state.INIT_MRS init_state.INIT_TRF init_state.INIT_TRP init_state.INIT_AR init_state.INIT_PRE init_state.INIT_IDLE 
+init_state.INIT_IDLE 0 0 0 0 0 0 0 0 
+init_state.INIT_PRE 0 0 0 0 0 0 1 1 
+init_state.INIT_AR 0 0 0 0 0 1 0 1 
+init_state.INIT_TRP 0 0 0 0 1 0 0 1 
+init_state.INIT_TRF 0 0 0 1 0 0 0 1 
+init_state.INIT_MRS 0 0 1 0 0 0 0 1 
+init_state.INIT_END 0 1 0 0 0 0 0 1 
+init_state.INIT_TMRD 1 0 0 0 0 0 0 1 

@@ -1,0 +1,13 @@
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) pce_top_extram.vhd ]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dpram.vhd ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) mb128.sv ]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) huc6270.vhd ]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) huc6260.vhd ]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) huc6202.vhd ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) color_mix.sv ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) cheatcodes.sv ]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) CEGen.vhd ]
+set_global_assignment -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) arcade.sv ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) HUC6280/HUC6280.qip ]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) cd/cd.qip ]
+
