@@ -9,4 +9,4 @@ fix was needed for the "LD ($FF00+C)" instruction.
 The audio implementation has been taken from the PACE framework. The
 original file is available in the [pacedev svn](https://svn.pacedev.net/repos/pace/sw/src/component/sound/gb/gbc_snd.vhd).
 
-Binaries are available at https://github.com/mist-devel/mist-binaries/tree/master/cores/gameboy.
+Binaries are available at https://github.com/suisuisi/gamegirl/tree/master/CoreCPU/gameboy.
